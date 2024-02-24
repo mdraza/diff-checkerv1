@@ -34,7 +34,7 @@ const TextDiffChecker = () => {
   return (
     <div id="top">
       <div className="w-100 flex h-[70vh] m-1 md:m-3 md:space-x-3 space-y-1 md:space-y-0 flex-col md:flex-row">
-        <div className="flex-1 rounded-md md:mb-0 mb-8">
+        <div className="flex-1 rounded-md md:mb-0 mb-10">
           <textarea
             className="w-[100%] h-[100%] p-2 dark:bg-[#2b2b2b] dark:text-white rounded-md border-[2px] border-slate-300 dark:border-[#464646] outline-none focus-visible:border-[#5002d0] dark:focus-visible:border-slate-300"
             placeholder="Old content"
@@ -82,7 +82,7 @@ const TextDiffChecker = () => {
           smooth={true}
           offset={-10}
           duration={500}
-          className="bg-[#4608ad] hover:bg-[#551bb3] dark:hover:bg-[#333] dark:transition-all transition-all rounded text-white px-6 py-[14px] md:px-8 md:py-3 mb-6 md:mb-0  dark:text-white dark:bg-[#2b2b2b]  cursor-pointer"
+          className="bg-[#4608ad] hover:bg-[#551bb3] dark:hover:bg-[#333] dark:transition-all transition-all rounded text-white px-6 py-[14px] md:px-8 md:py-3 mb-6 md:mb-0 mt-1  dark:text-white dark:bg-[#2b2b2b]  cursor-pointer"
           onClick={handleCheckDiff}
         >
           Compute Difference
