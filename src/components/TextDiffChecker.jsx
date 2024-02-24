@@ -30,8 +30,6 @@ const TextDiffChecker = () => {
     setText2("");
     setDiff([]);
   };
-  const count = text1.split(" ").length;
-  console.log(count);
 
   return (
     <div id="top">
@@ -79,7 +77,6 @@ const TextDiffChecker = () => {
       </div>
       <div className="flex justify-center mt-[35px] md:mt-[50px]">
         <Link
-          // to={text1.length > 5 && text2.length > 5 && "result"}
           to="result"
           spy={true}
           smooth={true}
