@@ -47,7 +47,7 @@ const TextDiffChecker = () => {
               <b>{text1 === "" ? "0" : text1.trim().split(" ").length}</b>
             </p>
             <button
-              className="text-2xl text-slate-600 dark:text-[#9a9a9a]"
+              className="text-2xl text-slate-600 dark:text-[#9a9a9a] hover:text-slate-700 transition-all dark:hover:text-slate-300"
               onClick={handleClearText1}
             >
               <GrClear />
@@ -67,7 +67,7 @@ const TextDiffChecker = () => {
               <b>{text2 === "" ? "0" : text2.trim().split(" ").length}</b>
             </p>
             <button
-              className="text-2xl text-slate-600 dark:text-[#9a9a9a]"
+              className="text-2xl text-slate-600 dark:text-[#9a9a9a] hover:text-slate-700 transition-all dark:hover:text-slate-300"
               onClick={handleClearText2}
             >
               <GrClear />
@@ -82,7 +82,7 @@ const TextDiffChecker = () => {
           smooth={true}
           offset={-10}
           duration={500}
-          className="bg-[#4608ad] rounded text-white px-6 py-[14px] md:px-8 md:py-3 mb-6 md:mb-0  dark:text-white dark:bg-[#2b2b2b]  cursor-pointer"
+          className="bg-[#4608ad] hover:bg-[#551bb3] dark:hover:bg-[#333] dark:transition-all transition-all rounded text-white px-6 py-[14px] md:px-8 md:py-3 mb-6 md:mb-0  dark:text-white dark:bg-[#2b2b2b]  cursor-pointer"
           onClick={handleCheckDiff}
         >
           Compute Difference
@@ -116,7 +116,7 @@ const TextDiffChecker = () => {
           smooth={true}
           offset={-150}
           duration={500}
-          className="bg-[#4608ad] dark:bg-[#2b2b2b] rounded text-white px-6 py-2 md:mt-4 mt-3 cursor-pointer inline-block"
+          className="bg-[#4608ad] dark:bg-[#2b2b2b] hover:bg-[#551bb3] transition-all dark:hover:bg-[#333] rounded text-white px-6 py-2 md:mt-4 mt-3 cursor-pointer inline-block"
           onClick={handleClearAll}
         >
           Clear all
