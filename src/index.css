@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.added {
+  background-color: #d4edda;
+}
+
+.removed {
+  background-color: #f8d7da;
+}
+
+.disabled {
+  opacity: 0.5;
+}
