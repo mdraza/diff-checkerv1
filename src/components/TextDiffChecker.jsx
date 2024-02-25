@@ -82,7 +82,7 @@ const TextDiffChecker = () => {
           smooth={true}
           offset={-10}
           duration={500}
-          className="bg-[#4608ad] hover:bg-[#551bb3] dark:hover:bg-[#333] dark:transition-all transition-all rounded text-white px-6 py-[14px] md:px-8 md:py-[15px] mb-6 md:mb-0 mt-1  dark:text-white dark:bg-[#2b2b2b]  cursor-pointer"
+          className="bg-[#4608ad] hover:bg-[#551bb3] dark:hover:bg-[#333] dark:transition-all transition-all rounded text-white text-[18px] px-6 py-[14px] md:px-8 md:py-[15px] mb-6 md:mb-0 mt-1  dark:text-white dark:bg-[#2b2b2b]  cursor-pointer"
           onClick={handleCheckDiff}
         >
           Compute Difference
@@ -116,7 +116,7 @@ const TextDiffChecker = () => {
           smooth={true}
           offset={-150}
           duration={500}
-          className="bg-[#4608ad] dark:bg-[#2b2b2b] hover:bg-[#551bb3] transition-all dark:hover:bg-[#333] rounded text-white px-7 py-3 md:mt-4 mt-3 cursor-pointer inline-block"
+          className="bg-[#4608ad] dark:bg-[#2b2b2b] hover:bg-[#551bb3] transition-all dark:hover:bg-[#333] rounded text-white text-[18px] px-7 py-3 md:mt-4 mt-3 cursor-pointer inline-block"
           onClick={handleClearAll}
         >
           Clear all
