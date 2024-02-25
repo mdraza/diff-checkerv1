@@ -3,13 +3,9 @@
 @tailwind utilities;
 
 .added {
-  background-color: #d4edda;
+  background-color: #43d543;
 }
 
 .removed {
-  background-color: #f8d7da;
-}
-
-.disabled {
-  opacity: 0.5;
+  background-color: #f45f5f;
 }

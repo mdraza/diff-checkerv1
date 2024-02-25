@@ -36,7 +36,7 @@ const TextDiffChecker = () => {
       <div className="w-100 flex h-[70vh] m-1 md:m-3 md:space-x-3 space-y-1 md:space-y-0 flex-col md:flex-row">
         <div className="flex-1 rounded-md md:mb-0 mb-10">
           <textarea
-            className="w-[100%] h-[100%] p-2 dark:bg-[#2b2b2b] dark:text-white rounded-md border-[2px] border-slate-300 dark:border-[#464646] outline-none focus-visible:border-[#5002d0] dark:focus-visible:border-slate-300"
+            className="w-[100%] h-[100%] text-[18px] p-2 dark:bg-[#2b2b2b] dark:text-white rounded-md border-[2px] border-slate-300 dark:border-[#464646] outline-none focus-visible:border-[#5002d0] dark:focus-visible:border-slate-300"
             placeholder="Old content"
             value={text1}
             onChange={(e) => handleTextChange(e, setText1)}
@@ -56,7 +56,7 @@ const TextDiffChecker = () => {
         </div>
         <div className="flex-1 rounded-md md:mb-0 mb-8">
           <textarea
-            className="w-[100%] h-[100%] p-2 rounded-md border-[2px] dark:bg-[#2b2b2b] dark:text-white border-slate-300 dark:border-[#464646] outline-none focus-visible:border-[#5002d0] dark:focus-visible:border-slate-300"
+            className="w-[100%] h-[100%] text-[18px] p-2 rounded-md border-[2px] dark:bg-[#2b2b2b] dark:text-white border-slate-300 dark:border-[#464646] outline-none focus-visible:border-[#5002d0] dark:focus-visible:border-slate-300"
             placeholder="New content"
             value={text2}
             onChange={(e) => handleTextChange(e, setText2)}
@@ -82,14 +82,14 @@ const TextDiffChecker = () => {
           smooth={true}
           offset={-10}
           duration={500}
-          className="bg-[#4608ad] hover:bg-[#551bb3] dark:hover:bg-[#333] dark:transition-all transition-all rounded text-white px-6 py-[14px] md:px-8 md:py-3 mb-6 md:mb-0 mt-1  dark:text-white dark:bg-[#2b2b2b]  cursor-pointer"
+          className="bg-[#4608ad] hover:bg-[#551bb3] dark:hover:bg-[#333] dark:transition-all transition-all rounded text-white px-6 py-[14px] md:px-8 md:py-[15px] mb-6 md:mb-0 mt-1  dark:text-white dark:bg-[#2b2b2b]  cursor-pointer"
           onClick={handleCheckDiff}
         >
           Compute Difference
         </Link>
       </div>
       <div className="md:mt-11 md:m-3 m-2" id="result">
-        <div className=" bg-white p-2 md:p-2 rounded min-h-20 dark:bg-[#2b2b2b] dark:text-white">
+        <div className=" bg-white text-[18px] p-2 md:p-2 rounded min-h-20 dark:bg-[#2b2b2b] dark:text-white">
           {diff.length == 0 ? (
             <span className="text-[#676767c5] dark:text-[#ffffff89]">
               Difference results (if there are any)
@@ -116,7 +116,7 @@ const TextDiffChecker = () => {
           smooth={true}
           offset={-150}
           duration={500}
-          className="bg-[#4608ad] dark:bg-[#2b2b2b] hover:bg-[#551bb3] transition-all dark:hover:bg-[#333] rounded text-white px-6 py-2 md:mt-4 mt-3 cursor-pointer inline-block"
+          className="bg-[#4608ad] dark:bg-[#2b2b2b] hover:bg-[#551bb3] transition-all dark:hover:bg-[#333] rounded text-white px-7 py-3 md:mt-4 mt-3 cursor-pointer inline-block"
           onClick={handleClearAll}
         >
           Clear all
