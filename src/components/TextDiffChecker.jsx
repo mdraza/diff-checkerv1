@@ -41,13 +41,13 @@ const TextDiffChecker = () => {
             value={text1}
             onChange={(e) => handleTextChange(e, setText1)}
           />
-          <div className="flex justify-between">
-            <p className="text-[18px] text-slate-500 dark:text-[#9a9a9a]">
+          <div className="flex justify-between border-[2px] border-t-0 border-slate-300 dark:border-[#464646] bg-white px-3 py-2 rounded -mt-2">
+            <p className="text-[17px] text-slate-600 dark:text-[#9a9a9a]">
               Words count:{" "}
               <b>{text1 === "" ? "0" : text1.trim().split(" ").length}</b>
             </p>
             <button
-              className="text-[28px] text-slate-600 dark:text-[#9a9a9a] hover:text-slate-700 transition-all dark:hover:text-slate-300"
+              className="text-[25px] text-slate-600 dark:text-[#9a9a9a] hover:text-slate-700 transition-all dark:hover:text-slate-300"
               onClick={handleClearText1}
             >
               <GrClear />
@@ -61,13 +61,13 @@ const TextDiffChecker = () => {
             value={text2}
             onChange={(e) => handleTextChange(e, setText2)}
           />
-          <div className="flex justify-between">
-            <p className="text-[18px] text-slate-500 dark:text-[#9a9a9a]">
+          <div className="flex justify-between border-[2px] border-t-0 border-slate-300 dark:border-[#464646] bg-white px-3 py-2 rounded -mt-2">
+            <p className="text-[17px] text-slate-600 dark:text-[#9a9a9a]">
               Words count:{" "}
               <b>{text2 === "" ? "0" : text2.trim().split(" ").length}</b>
             </p>
             <button
-              className="text-[28px] text-slate-600 dark:text-[#9a9a9a] hover:text-slate-700 transition-all dark:hover:text-slate-300"
+              className="text-[25px] text-slate-600 dark:text-[#9a9a9a] hover:text-slate-700 transition-all dark:hover:text-slate-300"
               onClick={handleClearText2}
             >
               <GrClear />
@@ -75,14 +75,14 @@ const TextDiffChecker = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-[35px] md:mt-[50px]">
+      <div className="flex justify-center mt-[42px] md:mt-[50px]">
         <Link
           to="result"
           spy={true}
           smooth={true}
           offset={-10}
           duration={500}
-          className="bg-[#4608ad] hover:bg-[#551bb3] dark:hover:bg-[#333] dark:transition-all transition-all rounded text-white text-[16px] px-[24px] py-[12px] mb-6 md:mb-0 mt-1  dark:text-white dark:bg-[#2b2b2b]  cursor-pointer"
+          className="bg-[#4608ad] hover:bg-[#551bb3] dark:hover:bg-[#333] dark:transition-all transition-all rounded text-white text-[16px] px-[24px] py-[12px] mb-6 md:mb-0 mt-3  dark:text-white dark:bg-[#2b2b2b]  cursor-pointer"
           onClick={handleCheckDiff}
         >
           Compute Difference
@@ -116,7 +116,7 @@ const TextDiffChecker = () => {
           smooth={true}
           offset={-150}
           duration={500}
-          className="bg-[#4608ad] dark:bg-[#2b2b2b] hover:bg-[#551bb3] transition-all dark:hover:bg-[#333] rounded text-white text-[16px] px-[24px] py-[12px]  md:mt-4 mt-3 cursor-pointer inline-block"
+          className="bg-[#4608ad] dark:bg-[#2b2b2b] hover:bg-[#551bb3] transition-all dark:hover:bg-[#333] rounded text-white text-[16px] px-[24px] py-[12px]  md:mt-5 mt-3 cursor-pointer inline-block"
           onClick={handleClearAll}
         >
           Clear all
