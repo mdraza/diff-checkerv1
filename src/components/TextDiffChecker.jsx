@@ -42,12 +42,12 @@ const TextDiffChecker = () => {
             onChange={(e) => handleTextChange(e, setText1)}
           />
           <div className="flex justify-between">
-            <p className="text-sm text-slate-500 dark:text-[#9a9a9a]">
+            <p className="text-[18px] text-slate-500 dark:text-[#9a9a9a]">
               Words count:{" "}
               <b>{text1 === "" ? "0" : text1.trim().split(" ").length}</b>
             </p>
             <button
-              className="text-2xl text-slate-600 dark:text-[#9a9a9a] hover:text-slate-700 transition-all dark:hover:text-slate-300"
+              className="text-[28px] text-slate-600 dark:text-[#9a9a9a] hover:text-slate-700 transition-all dark:hover:text-slate-300"
               onClick={handleClearText1}
             >
               <GrClear />
@@ -62,12 +62,12 @@ const TextDiffChecker = () => {
             onChange={(e) => handleTextChange(e, setText2)}
           />
           <div className="flex justify-between">
-            <p className="text-sm text-slate-500 dark:text-[#9a9a9a]">
+            <p className="text-[18px] text-slate-500 dark:text-[#9a9a9a]">
               Words count:{" "}
               <b>{text2 === "" ? "0" : text2.trim().split(" ").length}</b>
             </p>
             <button
-              className="text-2xl text-slate-600 dark:text-[#9a9a9a] hover:text-slate-700 transition-all dark:hover:text-slate-300"
+              className="text-[28px] text-slate-600 dark:text-[#9a9a9a] hover:text-slate-700 transition-all dark:hover:text-slate-300"
               onClick={handleClearText2}
             >
               <GrClear />
@@ -89,7 +89,7 @@ const TextDiffChecker = () => {
         </Link>
       </div>
       <div className="md:mt-11 md:m-3 m-2" id="result">
-        <div className=" bg-white text-[18px] p-2 md:p-2 rounded min-h-20 dark:bg-[#2b2b2b] dark:text-white">
+        <div className=" bg-white whitespace-pre-wrap	 text-[18px] p-2 md:p-2 rounded min-h-20 dark:bg-[#2b2b2b] dark:text-white">
           {diff.length == 0 ? (
             <span className="text-[#676767c5] dark:text-[#ffffff89]">
               Difference results (if there are any)
