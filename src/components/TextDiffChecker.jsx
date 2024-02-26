@@ -41,7 +41,7 @@ const TextDiffChecker = () => {
             value={text1}
             onChange={(e) => handleTextChange(e, setText1)}
           />
-          <div className="flex justify-between border-[2px] border-t-0 border-slate-300 dark:border-[#464646] bg-white px-3 py-2 rounded -mt-2">
+          <div className="flex justify-between border-[2px] border-t-0 border-slate-300 dark:border-[#464646] dark:bg-[#2b2b2b] bg-white px-3 py-2 rounded -mt-2">
             <p className="text-[17px] text-slate-600 dark:text-[#9a9a9a]">
               Words count:{" "}
               <b>{text1 === "" ? "0" : text1.trim().split(" ").length}</b>
@@ -61,7 +61,7 @@ const TextDiffChecker = () => {
             value={text2}
             onChange={(e) => handleTextChange(e, setText2)}
           />
-          <div className="flex justify-between border-[2px] border-t-0 border-slate-300 dark:border-[#464646] bg-white px-3 py-2 rounded -mt-2">
+          <div className="flex justify-between border-[2px] border-t-0 border-slate-300 dark:border-[#464646] dark:bg-[#2b2b2b] bg-white px-3 py-2 rounded -mt-2">
             <p className="text-[17px] text-slate-600 dark:text-[#9a9a9a]">
               Words count:{" "}
               <b>{text2 === "" ? "0" : text2.trim().split(" ").length}</b>
