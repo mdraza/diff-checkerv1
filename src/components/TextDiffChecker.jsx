@@ -83,7 +83,7 @@ const TextDiffChecker = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-[42px] md:mt-[60px]">
+      <div className="flex justify-center mt-[42px] md:mt-[55px]">
         <Link
           to="result"
           spy={true}
@@ -124,7 +124,7 @@ const TextDiffChecker = () => {
           smooth={true}
           offset={-150}
           duration={500}
-          className="bg-[#4608ad] dark:bg-[#2b2b2b] hover:bg-[#551bb3] transition-all dark:hover:bg-[#333] rounded text-white text-[16px] px-[24px] py-[12px]  md:mt-[33px] mt-[28px] cursor-pointer inline-block"
+          className="bg-[#4608ad] dark:bg-[#2b2b2b] hover:bg-[#551bb3] transition-all dark:hover:bg-[#333] rounded text-white text-[16px] px-[24px] py-[12px]  md:mt-[40px] mt-[28px] cursor-pointer inline-block"
           onClick={handleClearAll}
         >
           Clear all
