@@ -34,7 +34,7 @@ const TextDiffChecker = () => {
   return (
     <div id="top">
       <div className="w-100 flex h-[70vh] m-1 md:m-3 md:space-x-3 space-y-1 md:space-y-0 flex-col md:flex-row">
-        <div className="flex-1 rounded-md md:mb-0 mb-10">
+        <div className="flex-1 rounded-md md:mb-0 mb-[45px]">
           <textarea
             className="w-[100%] h-[100%] text-[18px] p-2 dark:bg-[#2b2b2b] dark:text-white rounded-md border-[2px] border-slate-300 dark:border-[#464646] outline-none focus-visible:border-[#5002d0] dark:focus-visible:border-slate-300"
             placeholder="Old content"
